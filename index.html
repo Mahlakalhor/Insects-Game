@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>insects-game</title>
+  </head>
+  <body class="h-screen bg-[#516dff]">
+    <main class="h-full p-6">
+      <section
+        class="h-full w-full flex flex-col justify-center items-center gap-4"
+      >
+        <span class="text-[32px] text-[#fff]">Catch The Insect</span>
+        <button
+          id="start-btn"
+          class="bg-[#fff] hover:bg-gray-100 text-[#516dff] w-40 h-11 text-[14px] cursor-pointer hover:scale-95"
+        >
+          Play Game
+        </button>
+      </section>
+
+      <section
+        class="h-full w-full flex flex-col justify-center items-center gap-10"
+      >
+        <span class="text-[32px] text-[#fff]"
+          >What is your "favorite" insect?</span
+        >
+        <ul class="flex flex-row gap-6">
+          <li>
+            <button
+              class="group hover:scale-95 flex flex-col justify-center items-center cursor-pointer border-2 border-white hover:bg-[#fff] h-[150px] w-[150px]"
+            >
+              <span
+                class="text-[#fff] group-hover:text-[#516dff] text-[13px] p-2"
+                >Fly</span
+              >
+              <img
+                src="./src/image/fly.png"
+                alt="fly_pic"
+                class="w-[100px] h-[100px]"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              class="group hover:scale-95 flex flex-col justify-center items-center cursor-pointer border-2 border-white hover:bg-[#fff] h-[150px] w-[150px]"
+            >
+              <span
+                class="text-[#fff] group-hover:text-[#516dff] text-[13px] p-2"
+                >Mosquito</span
+              >
+              <img
+                src="./src/image/mosquito.png"
+                alt="mosquito-pic"
+                class="w-[100px] h-[100px]"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              class="group hover:scale-95 flex flex-col justify-center items-center cursor-pointer border-2 border-white hover:bg-[#fff] h-[150px] w-[150px]"
+            >
+              <span
+                class="text-[#fff] group-hover:text-[#516dff] text-[13px] p-2"
+                >Spider</span
+              >
+              <img
+                src="./src/image/spider.png"
+                alt="spider-pic"
+                class="w-[100px] h-[100px]"
+              />
+            </button>
+          </li>
+          <li>
+            <button
+              class="group hover:scale-95 flex flex-col justify-center items-center cursor-pointer border-2 border-white hover:bg-[#fff] h-[150px] w-[150px]"
+            >
+              <span
+                class="text-[#fff] group-hover:text-[#516dff] text-[13px] p-2"
+                >Roach</span
+              >
+              <img
+                src="./src/image/roach.png"
+                alt="roach-pic"
+                class="w-[100px] h-[100px]"
+              />
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="text-[#fff] flex justify-between p-4">
+          <span class="text-xl">Time:</span>
+          <span class="text-xl">Score:</span>
+        </div>
+        <span class="text-[#fff] bg-gray-600 p-1.5" >Are you annoyed yet?</span>
+        <span class="text-[#fff] bg-gray-600 p-1.5"> You are playing an impossible game!! </span>
+        <div>
+          <img
+            src="./src/image/roach.png"
+            alt="roach-pic"
+            class="w-[100px] h-[100px]"
+          />
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
