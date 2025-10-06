@@ -9,6 +9,7 @@
   <body class="h-screen bg-[#516dff]">
     <main class="h-full p-6">
       <section
+        id="screen-start"
         class="h-full w-full flex flex-col justify-center items-center gap-4"
       >
         <span class="text-[32px] text-[#fff]">Catch The Insect</span>
@@ -21,7 +22,8 @@
       </section>
 
       <section
-        class="h-full w-full flex flex-col justify-center items-center gap-10"
+        id="screen-select"
+        class="hidden h-full w-full flex flex-col justify-center items-center gap-10"
       >
         <span class="text-[32px] text-[#fff]"
           >What is your "favorite" insect?</span
@@ -90,19 +92,31 @@
         </ul>
       </section>
 
-      <section>
-        <div class="text-[#fff] flex justify-between p-4">
-          <span class="text-xl">Time:</span>
-          <span class="text-xl">Score:</span>
+      <section
+        id="screen-game"
+        class="hidden h-full w-full relative overflow-hidden"
+      >
+        <div
+          class="text-white flex justify-between items-center p-4 select-none"
+        >
+          <span class="text-xl">Time: <span id="time">00:00</span></span>
+          <span class="text-xl">Score: <span id="score">0</span></span>
         </div>
-        <span class="text-[#fff] bg-gray-600 p-1.5" >Are you annoyed yet?</span>
-        <span class="text-[#fff] bg-gray-600 p-1.5"> You are playing an impossible game!! </span>
-        <div>
-          <img
-            src="./src/image/roach.png"
-            alt="roach-pic"
-            class="w-[100px] h-[100px]"
-          />
+
+        <div
+          class="pointer-events-none w-full absolute left-1/2 -translate-x-1/2 top-14 z-10 flex flex-col items-center p-4"
+        >
+          <p
+            id="msg1"
+            class="hidden text-white bg-black/40 px-3 py-1 rounded-l"
+          >
+            Are you annoyed yet? </span
+          ><p
+            id="msg2"
+            class="hidden text-white bg-black/40 px-3 py-1 rounded-r -ml-px"
+          >
+            You are playing an impossible game!!
+      </p>
         </div>
       </section>
     </main>
